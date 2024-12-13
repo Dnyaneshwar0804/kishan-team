@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Foodie Express</h1>
+        </div>
+        <div class="navbar">
+        <button id="orderButton">Contact us</button>
+        <button id="orderButton">Login</button>
+        <button id="orderButton">Map</button>
+        <button id="orderButton">Ratings</button>
+        <button id="orderButton">Delivery Interface</button>
+       
+    </div>
+
+    <div class="food-container">
+        <div class="food-item" data-food="Pizza">
+            <img src="pizza.jpg" alt="Pizza">
+            <h2>Pizza</h2>
+            <p>$12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="food-item" data-food="Burger">
+            <img src="burger.jpg" alt="Burger">
+            <h2>Burger</h2>
+            <p>$8.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="food-item" data-food="Sushi">
+            <img src="sushi.jpg" alt="Sushi">
+            <h2>Sushi</h2>
+            <p>$14.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="navbar">
+        <h1>Click Here to Place Your Order</h1>
+        <button id="orderButton">Order Now</button>
+    </div>
+
+    <div id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="totalPrice">0</span></p>
+        <button id="checkoutButton">Checkout</button>
+    </div>
+
+    <div id="checkoutModal" class="checkout-modal">
+        <div class="modal-content">
+            <h3>Thank You for Ordering!</h3>
+            <p>Your order has been placed successfully.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
